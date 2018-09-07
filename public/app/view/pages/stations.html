@@ -1,0 +1,27 @@
+<style>
+    .myform
+  {
+      width: 30%;
+      margin: 20px 0 0 400px;
+      padding: 20px 10px 20px 10px ;
+      background-color:rgb(226, 226, 226); 
+      height: 150px
+  }
+
+  h2{
+    margin-left: 500px;
+  }
+</style>
+
+<div class = "page-header">
+  <h2>Find Stations</h2>
+</div>
+
+<div class="myform">
+    <form ng-submit="station.submit(city);">
+        <label>City Name</label>
+        <input class="form-control" type="text" name="City" placeholder="Enter City Name" ng-model="station.city.name">
+        <br>
+        <button class="btn btn-primary" type= "submit">Submit</button>
+      </form>
+</div>
